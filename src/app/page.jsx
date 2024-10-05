@@ -197,7 +197,7 @@ const PriceCards = ({ selected }) => {
                 transition={{ ease: "linear", duration: 0.25 }}
                 className="text-6xl font-bold text-blue-500"
               >
-                <span>Q8,000</span>
+                <span>Q5,000</span>
                 <span className="font-normal text-xl">/año</span>
               </motion.p>
             )}
