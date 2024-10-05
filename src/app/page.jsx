@@ -1,17 +1,20 @@
 "use client";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import About from "@/app/About";
 
 const SlidePricing = () => {
   const [selected, setSelected] = useState("M");
 
   return (
-    <section className="w-full text-black bg-white  px-4 lg:px-8 py-24 relative overflow-hidden">
-      <Heading selected={selected} setSelected={setSelected} />
-      <PriceCards selected={selected} />
-      <TopLeftCircle />
-      <BottomRightCircle />
-    </section>
+    <>
+      <section className="w-full text-black bg-white  px-4 lg:px-8 py-24 relative overflow-hidden">
+        <Heading selected={selected} setSelected={setSelected} />
+        <PriceCards selected={selected} />
+        <TopLeftCircle />
+        <BottomRightCircle />
+      </section>
+    </>
   );
 };
 
@@ -29,6 +32,10 @@ const Heading = ({ selected, setSelected }) => {
         Elige el plan que mejor se adapte a las necesidades de tu empresa y
         empieza a mejorar tu presencia online.
       </p>
+      <p className="text-center mx-auto max-w-lg mb-8">
+        Con nusetro planes te ayudamos a crear y posicionar tu página web usando prácticas de SEO y desarrollo web únicas
+      </p>
+    
       <div className="flex items-center justify-center gap-3">
         <button
           onClick={() => setSelected("M")}
@@ -107,11 +114,11 @@ const PriceCards = ({ selected }) => {
         <p className="text-6xl font-bold mb-8">
           {selected === "M" ? (
             <>
-              $70<span className="font-normal text-xl">/mes</span>
+              Q560<span className="font-normal text-xl">/mes</span>
             </>
           ) : (
             <>
-              $820<span className="font-normal text-xl">/año</span>
+              Q6,560<span className="font-normal text-xl">/año</span>
             </>
           )}
         </p>
@@ -119,8 +126,8 @@ const PriceCards = ({ selected }) => {
           <li className="flex items-center gap-2">
             <CheckIcon />
             <span>
-              Plantilla de página web básica con todo lo necesario para mostrar
-              tu negocio al mundo
+              Plantilla de página web básica personalizada con información de tu
+              empresa
             </span>
           </li>
           <li className="flex items-center gap-2">
@@ -166,7 +173,7 @@ const PriceCards = ({ selected }) => {
       <div className="w-full bg-white p-6 border-[1px] border-slate-300 rounded-xl">
         <p className="text-2xl font-bold mb-2 text-blue-500">Intermedio</p>
         <p className="text-lg mb-6">
-          Solución completa para empresas en crecimiento.
+         Plantilla básica con información de tu empresa + secciones adicioales personalizadas
         </p>
         <div className="overflow-hidden mb-8">
           <AnimatePresence mode="wait">
@@ -179,7 +186,7 @@ const PriceCards = ({ selected }) => {
                 transition={{ ease: "linear", duration: 0.25 }}
                 className="text-6xl font-bold text-blue-500"
               >
-                <span>$120</span>
+                <span>Q800</span>
                 <span className="font-normal text-xl">/mes</span>
               </motion.p>
             ) : (
@@ -191,7 +198,7 @@ const PriceCards = ({ selected }) => {
                 transition={{ ease: "linear", duration: 0.25 }}
                 className="text-6xl font-bold text-blue-500"
               >
-                <span>$1350</span>
+                <span>Q8,900</span>
                 <span className="font-normal text-xl">/año</span>
               </motion.p>
             )}
@@ -245,7 +252,7 @@ const PriceCards = ({ selected }) => {
         <span className="text-2xl font-semibold">
           Desde: <br></br>
         </span>
-        <span className="text-6xl font-bold"> $2000</span>
+        <span className="text-6xl font-bold"> Q5,000</span>
         <span className="font-normal text-xl">/pagas solo una vez</span>
         {/* <div className="overflow-hidden mb-8">
           <AnimatePresence mode="wait">
