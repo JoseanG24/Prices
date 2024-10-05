@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import About from "@/app/About";
 
 const SlidePricing = () => {
   const [selected, setSelected] = useState("M");
