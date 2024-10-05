@@ -113,11 +113,11 @@ const PriceCards = ({ selected }) => {
         <p className="text-6xl font-bold mb-8">
           {selected === "M" ? (
             <>
-              Q560<span className="font-normal text-xl">/mes</span>
+              Q450<span className="font-normal text-xl">/mes</span>
             </>
           ) : (
             <>
-              Q6,560<span className="font-normal text-xl">/año</span>
+              Q5,000<span className="font-normal text-xl">/año</span>
             </>
           )}
         </p>
@@ -185,7 +185,7 @@ const PriceCards = ({ selected }) => {
                 transition={{ ease: "linear", duration: 0.25 }}
                 className="text-6xl font-bold text-blue-500"
               >
-                <span>Q800</span>
+                <span>Q700</span>
                 <span className="font-normal text-xl">/mes</span>
               </motion.p>
             ) : (
@@ -197,7 +197,7 @@ const PriceCards = ({ selected }) => {
                 transition={{ ease: "linear", duration: 0.25 }}
                 className="text-6xl font-bold text-blue-500"
               >
-                <span>Q8,900</span>
+                <span>Q8,000</span>
                 <span className="font-normal text-xl">/año</span>
               </motion.p>
             )}
