@@ -284,7 +284,7 @@ const PriceCards = ({ selected }) => {
         <ul className="mb-8 space-y-2 mt-5">
           <li className="flex items-center gap-2">
             <CheckIcon />
-            <span>El precio cambia depende de la complejidad de la página</span>
+            <span>El precio cambia dependiendo de la complejidad de la página</span>
           </li>
           <li className="flex items-center gap-2">
             <CheckIcon />
